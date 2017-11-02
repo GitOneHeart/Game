@@ -1,0 +1,64 @@
+header {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  background: red;
+  padding: 5px 50px 5px 70px;
+  position: fixed;
+}
+header .logo {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 70px;
+  height: 100%;
+  background: url('../img/jd-sprites.png');
+  background-size: 200px 200px;
+  background-position: 0 -110px;
+  background-origin: content-box;
+  background-clip: content-box;
+  padding: 9px 5px;
+}
+header .search {
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+header .search .rec {
+  position: absolute;
+  left: 7px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background: url('../img/jd-sprites.png');
+  background-size: 200px 200px;
+  background-position: -60px -110px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+header .search > input {
+  text-indent: 30px;
+}
+header .sign {
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.banner ul li a {
+  width: 100%;
+  height: 100%;
+}
+nav {
+  width: 100%;
+}
+nav ul li a {
+  width: 25%;
+  height: 100%;
+  background: red;
+}

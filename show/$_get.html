@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        // get请求
+        /* console.log('start')
+        $.get('../package.json',function(data1) {
+            console.log(data1)
+        })
+        console.log('end') */
+        // 动态img图片加载
+        // 创建一个图片
+        /*         console.log('start')
+                let img = document.createElement('img')
+                img.onload=function() {
+                    console.log('loaded')
+                }
+                let imgs= img.src='http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E7%BE%8E%E5%A5%B3%E5%9B%BE%E7%89%87&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&cs=227953490,3054069314&os=1430416850,2184109231&simid=3324734043,302775139&pn=14&rn=1&di=92568378760&ln=3982&fr=&fmq=1509550087967_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&hs=2&objurl=http%3A%2F%2Fpic.jj20.com%2Fup%2Fallimg%2F911%2F021616153629%2F160216153629-1.jpg&rpstart=0&rpnum=0&adpicid=0&ctd=1509550092289^3_1349X638%1'
+                
+                console.log('end') */
+
+        // 事件绑定实例
+        /*         console.log('start')
+                var  btn = document.createElement('button')
+                btn.value='按钮'
+                btn.addEventListener('onclick',function(){
+                    console.log(123)
+                })
+                document.body.appendChild(btn)
+                console.log('end') */
+
+        // forEach
+        /*         var array = [12,3,2]
+                array.forEach(function(item,index) {
+                    console.log(item)
+                    console.log(index)
+                }, this); */
+
+        // every
+        // 循环遍历每一个元素
+        /*         var arr = [1,2,3,4,5]
+                let result= arr.every(function(item) {
+                    if (item<4) {
+                        return true
+                    }
+                    console.log(456)
+                })
+                console.log(result) */
+
+        // some 遍历其中的一个元素
+        /*       let arr = [12, 2, 3, 4]
+              let result = arr.some(function (item, index) {
+                  // 用来判断每一个数组元素 ,有一个即可
+                  if (item < 4) {
+                      return true
+                  }
+              })
+              console.log(result) */
+
+        // sort排序
+        /*         let arr = [21,2,3,42,1,4]
+                let result = arr.sort(function(a,b) {
+                    // 从小到大排序
+                    // return  a - b;
+                    
+                    // 从大到小排序
+                    
+                    return b - a
+                })
+                console.log(result) */
+
+        // map  将数组重新组装
+        /*        var  arr = [12,3,2,1,4]
+               var result = arr.map(function(item,index) {
+                   return '<b>'+item+'</b>'
+               })
+               console.log(result) */
+
+        // filter
+        /*         var arr = [12,22,3,2]
+                var result = arr. */
+
+        // 对象API
+        /*         var obj = {
+                    name :'zhangsan',
+                    age:12,
+                    sex:'nv'
+                }
+                for(let key in obj){
+                    if(obj.hasOwnProperty(key)){
+                        console.log(key,obj[key])
+                    }
+                } */
+
+
+        /*  // 获取格式为2017-10-02的日期格式
+         function formatDate(dt) {
+             // 设置默认
+             if (!dt) {
+                 dt = new Date()
+             }
+             // 获取年
+             var year = dt.getFullYear()
+             // 获取月
+             var month = dt.getMonth() + 1
+             // 获取日
+             var day = dt.getDate()
+             // 如果月份<10 强制类型+0 
+             if (month < 10) {
+                 month = '0' + month
+             }
+             // 如果日<10  强制类型转换
+             if (day < 10) {
+                 day = '0' + day
+             }
+             // 设置return 
+             return year + '-' + month + '-' + day
+         }
+         var dt = new Date()
+         var result = formatDate(dt)
+         alert(result) */
+
+        // 写一个能遍历对象和数组的forEach函数
+ /*        function fn1(obj, fn) {
+            // 判断  如果元素的类型为数组 则遍历
+            if (obj instanceof Array) {
+                obj.forEach(function (item, index) {
+                    fn(item, index)
+                    console.log('是数组')
+                }, this);
+            } else {
+                for (var key in obj) {
+                    fn(key, obj[key])
+                    console.log('是对象')
+                }
+            }
+        } */
+
+   </script>
+</body>
+
+</html>
